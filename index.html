@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="es" name="language">
+        <title>Pizza Casera</title>
+        <style>
+
+
+            body{
+                font: 100% 
+                verdana;
+                font-size: 1vw;
+                margin: 0px;
+                padding:0px;
+                background-image: url('fondo.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size:100%;
+
+            }
+
+            .cabeza{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background: rgb(255,242,95);
+                background: linear-gradient(0deg, rgba(255,242,95,1) 0%, rgba(255,187,67,1) 100%);
+                height: 20vh;
+                border-bottom: 4px solid rgb(110, 110, 110);
+                
+            }
+
+            #titulo{
+                display: flex;
+                justify-content: center;
+                font-size:120%;
+            }
+
+            #iinicio{
+                border-top-left-radius:20px;
+                border-bottom-left-radius:20px;
+            }
+
+            #ifin{
+                border-top-right-radius:20px;
+                border-bottom-right-radius:20px;
+            }
+            
+            .fondo{
+                display: grid;
+                justify-content:center;
+                background: rgb(255,242,95);
+                background: linear-gradient(180deg, rgba(255,242,95,1) 0%, rgba(255,187,67,1) 100%);
+                height: 16vh;
+                border-bottom: 4px solid rgb(90, 90, 90);
+            }
+
+            .principal{
+                padding-top: 5%;
+                padding-bottom: 5%;
+                display: grid;
+                grid-template-columns: repeat(99, 1%);
+                justify-content: space-around;
+                
+            }
+
+            .seccion{
+                outline: 4px solid rgb(180 180 180 / 70%);
+                background: white;
+                border-radius: 5rem;
+                height: 25vw;
+                display: grid;
+            }
+
+            .space{
+                height: 8vw;
+                grid-column: 1 / 2;
+            }
+
+            #a1{
+                grid-column: 15 / 40;
+                background: rgb(255, 255, 162);
+            }
+
+            #a2{
+                grid-column: 50 / 85;
+                background: rgb(255, 255, 162);
+
+            }
+
+            #b1{
+                grid-column: 15 / 50;
+                background: rgb(255, 230, 162);
+            }
+
+            #b2{
+                grid-column: 60 / 85;
+                background: rgb(255, 230, 162);
+            }
+
+            #c1{
+                grid-column: 15 / 40;
+                background: rgb(255, 212, 162);
+            }
+
+            #c2{
+                grid-column: 50 / 85;
+                background: rgb(255, 212, 162);
+
+            }
+
+            #d1{
+                font-size:130%;
+                grid-column: 15 / 50;
+                background: rgb(255, 191, 162);
+            }
+
+            #d2{
+                grid-column: 60 / 85;
+                background: rgb(255, 191, 162);
+
+            }
+
+            #e1{
+                grid-column: 15 / 40;
+                background: rgb(255, 162, 162);
+            }
+
+            #e2{
+                grid-column: 50 / 85;
+                background: rgb(255, 162, 162);
+
+            }
+
+            #index{
+                grid-row-start: 2;
+                display:flex;
+                justify-content: center;
+                gap: 1vw;
+                font-size: 1vw;
+            }
+
+            .indice{
+                background: rgba(168, 168, 168, 0.507);
+                border:2px solid black;
+                height: 4vh;
+                padding-top:2vh;
+                text-align:center;
+                width: 12vw;
+                text-decoration:none;
+                color: black;
+            }
+
+            .texto{
+                padding-left: 3vw;
+                padding-top:1vh;
+                width: 30vw;
+            }
+
+            #tape{
+                position:fixed;
+                background: rgb(180 180 180 / 50%);
+                z-index:-1;
+                height:100vh;
+                width:100vw;
+            }
+
+            #fond{
+                padding-top:5vh;
+            }
+
+            
+        </style>
+    </head>
+
+
+    <body>
+
+        <div id="tape"></div>
+
+        <header>
+            <div class="cabeza">
+                <div id="titulo"> 
+                    <h1>¿Cómo hacer una pizza casera?</h1>
+                </div>
+                <section id="index">
+                    <a id="iinicio" class="indice" href="#a1">Levadura</a>
+                    <a class="indice" href="#b1">Masa</a>
+                    <a class="indice" href="#c1">Salsa</a>
+                    <a class="indice" href="#d1">Agregados</a>
+                    <a id="ifin" class="indice" href="#e1">Cocción</a>
+                </section>
+            </div>
+        </header>
+
+        <section  class="principal">
+            
+            <img src="levadura.jpg" id="a1" class="seccion" class="a0">
+            <div id="a2" class="seccion" class="a0">
+                <p class="texto">Para empezar, hay que activar la levadura, esto se logra agregando en un recipiente pequeño:</p>
+                <ul class="texto">
+                    <li>1/3 del recipiente de agua a temperatura ambiente</li>
+                    <li>1 Cucharada sopera de harina de trigo</li>
+                    <li>1 cucharadita de azucar</li>
+                    <li>1 Sobre de levadura seca o paquete de levadura fresca por cada kilo de harina</li>
+                </ul>
+                <p class="texto">Mezclamos suavemente y dejamos reposar por aproximadamente 10 minutos hasta obtener un resultado parecido al de la imagen</p>
+            </div>
+            <div id="s1" class="space"></div>
+            <div id="s2" class="space" ></div>
+            <div id="b1" class="seccion" class="b">
+                <p class="texto">Una vez la levadura está activa, se debe hacer la masa. Para ello necesitaremos:</p>
+                <ul class="texto">
+                    <li>Un kilo de harina de trigo "0000"</li>
+                    <li>Sal a gusto</li>
+                    <li>Dos cucharadas soperas de aceite de girasol o de oliva</li>
+                    <li>Condimentos a gusto</li>
+                </ul>
+                <p class="texto">Por último agregamos la levadura, mezclamos todo y agregamos agua hasta obtener una masa consistente. Luego dejamos reposar por aproximadamente 45 minutos, hasta que se observe que haya aumentado su tamaño.</p>
+            </div>
+            <img src="massa.jpg" id="b2" class="seccion" class="b">
+            <div id="s1" class="space"></div>
+            <div id="s2" class="space"></div>
+            <img src="salsa.jpg" id="c1" class="seccion" class="c">
+            <div id="c2" class="seccion" class="c">
+                <p class="texto">La salsa puede ser a gusto del cocinero, sin embargo se puede hacer una salsa simple de la siguiente manera:</p>
+                <ul class="texto">
+                    <li>Picamos cebolla y la sofreímos</li>
+                    <li>Cuando se cocine la cebolla, le agregamos puré de tomate</li>
+                    <li>Cuando se termine de cocinar el tomate le agregaremos condimentos a gusto,por lo general se usa orégano</li>
+                </ul>
+                <p class="texto">Si tenemos la masa lista, le esparciremos un poco de salsa para que la absorba y tome sabor la masa.</p>
+            </div>
+            <div id="s1" class="space"></div>
+            <div id="s2" class="space"></div>
+            <div id="d1" class="seccion" class="d">
+                <p class="texto">En el caso de querer ponerle agrrgados a la pizza, se lo puede hacer, en mi caso yo agregué tomates confitados, cebolla caramelizada, champignones y rúcula, pero también se pueden agregar otros toppings, tales como tomate en rodajas, jamón, palmitos o hasta el polémico ananá.</p>
+                <p class="texto">Estos agregados se los pondremos a la pizza una vez que esté cocida la masa.</p>
+            </div>
+            <img src="cebolla.jpg" id="d2" class="seccion" class="d">
+            <div id="s1" class="space"></div>
+            <div id="s2" class="space"></div>
+            <img src="pizza.jpg" id="e1" class="seccion" class="e"></div>
+            <div id="e2" class="seccion" class="e">
+                <p class="texto">Para la cocción de la pizza, se moldeará la masa al tamaño del recipiente a usar y se la introducirá al horno previamente calentado.</p>
+                <p class="texto">Una vez que la masa esté cocida, se le agregarán la salsa y el queso.</p>
+                <p class="texto">Cuando se derrita el queso, le colocaremos los agregados que preparamos antes y con esto terminaremos la preparación. A disfrutar.</p>
+            </div>
+
+        </section>
+        
+
+        <footer class="fondo">
+        </footer>
+    </body>
+</html>
